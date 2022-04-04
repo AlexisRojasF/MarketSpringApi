@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Table(name = "productos")
 @Getter
 @Setter
-public class Producto {
+public class    Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")

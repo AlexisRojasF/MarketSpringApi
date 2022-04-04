@@ -25,7 +25,7 @@ public class Compra {
     @Column(name = "medio_pago")
     private Integer medioPago;
 
-    private Integer comentario;
+    private String comentario;
 
     private Integer estado;
 
@@ -33,6 +33,6 @@ public class Compra {
     @JoinColumn(name = "id_cliente",insertable = false,updatable = false)
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "producto" )
+    @OneToMany(mappedBy = "compra",cascade = {CascadeType.ALL})
     private List<CompraProducto> productos;
 }
