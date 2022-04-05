@@ -20,7 +20,7 @@ public class Cliente {
 
     private String apellidos;
 
-    private Integer celular;
+    private Double celular;
 
     private String direccion;
 

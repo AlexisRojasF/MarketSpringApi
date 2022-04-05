@@ -6,10 +6,12 @@ import com.plazit.market.persistence.crud.CompraCrudRepository;
 import com.plazit.market.persistence.entity.Compra;
 import com.plazit.market.persistence.mapper.PurchaseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class CompraRepository implements PurchaseRepository {
 
     @Autowired
